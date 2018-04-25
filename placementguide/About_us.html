@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>
+Home
+</title>
+<style>
+.prev, .next{
+cursor:pointer;
+position:absolute;
+top:50%;
+width:auto;
+margin-top:-22px;
+padding:16px;
+color:white;
+background-color:black;
+font-weight:bold;
+font-size:20px;
+
+}
+.next {
+  right: 104px;}
+
+.prev:hover, .next:hover {
+  background-color:gray;color: black;
+}
+.body{
+background-color:rgb(165,56,15);
+}
+
+.home{
+width:250px;
+height:250px;
+background-color:rgb(102, 99, 71);
+float:left;
+margin:60px;
+border-radius:5px;
+box-shadow:7px 7px 4px black;
+}
+.home:hover{
+
+box-shadow:10px 10px 6px black;
+}
+.home_head_text{
+font-weight:bold;
+color:yellow;
+}
+.home_body_text{
+font-weight:bold;
+color:white;
+word-spacing:10px;
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript" src="myJava.js"></script>
+<script>
+var c=1;
+function myFunction() {
+
+switch(c){
+case 1 :
+   document.getElementById("x").src = "aptitude.png";
+   
+c++;
+break;
+
+case 2:
+   document.getElementById("x").src = "technical.jpg";
+   
+c++;
+break;
+
+case 3:
+   document.getElementById("x").src = "hr.png";
+c++;
+break;
+default:   document.getElementById("x").src = "aboutUs.jpg";
+c=1;
+break;
+}
+setTimeout(myFunction,2000);
+
+}</script>
+
+
+</head>
+
+<body onload="myFunction()" class="body">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<a class="navbar-brand" href="PlacementGuide.html">Placement Guide</a>
+</div>
+<ul class="nav navbar-nav navbar-right" id="myList">
+<li ><a href="PlacementGuide.html">Home</a></li>
+<li ><a href="Written.html">Written</a></li>
+<li><a href="Technical.html">Technical</a></li>
+<li><a href="Hr.html">Hr</a></li>
+<li class="active"><a href="About_us.html">About Us</a></li>
+</ul>
+</div>
+</nav>
+<br><br><br>
+<h1>Made By:- Kishan,Kanhaiya,Dharmendra.<br>
+Guided by :- Avinash Sir.<br>	
+Project Coordinator :- Kavita Mam.</h1> 
+<div class="container-fluid" style="background-color:black;height:100px">
+<center>
+contact us
+@Placement Guide.All Right Reserved 2017.
+</center>
+</div>
+</body>
+</html>

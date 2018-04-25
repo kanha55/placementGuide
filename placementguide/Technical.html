@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>
+Home
+</title>
+<style>
+
+.body{
+background-color:rgb(165,56,15);
+}
+
+#question{
+width:800px;
+font-size:20px;
+height:500px;
+font-weight:bold;
+background-color:LightGray;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript" src="myJava.js"></script>
+
+<script type="text/javascript" src="TechnicalJS.js"></script>
+
+</head>
+
+<body onload="Load()" class="body">
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+<div class="container">
+<div class="navbar-header">
+<a class="navbar-brand" href="PlacementGuide.html">Placement Guide</a>
+</div>
+<ul class="nav navbar-nav navbar-right" id="myList">
+<li ><a href="PlacementGuide.html">Home</a></li>
+<li ><a href="Written.html">Written</a></li>
+<li class="active"><a href="Technical.html">Technical</a></li>
+<li><a href="Hr.html">Hr</a></li>
+<li><a href="About_us.html">About Us</a></li>
+</ul>
+</div>
+</nav><br><br><br>
+<center>
+<div id="question">
+
+</div><br>
+<button id="prev" onclick="getQuestion(0)" class="btn btn-primary">Previous</button>
+<button id="next" onclick="getQuestion(1)"  class="btn btn-primary">Next</button><br><br>
+</center>
+
+<div class="container-fluid" style="background-color:black;height:100px">
+<center>
+contact us
+@Placement Guide.All Right Reserved 2017.
+</center>
+</div>
+</body>
+</html>
